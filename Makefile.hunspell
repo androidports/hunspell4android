@@ -1,0 +1,19 @@
+HOST=arm-linux-androideabi
+SOURCE_DIR=hunspell-1.2.9
+DEST_DIR=$(shell pwd)/build
+PKG_CONFIG_PATH=$(DEST_DIR)/lib/pkgconfig
+
+all: configure build install
+
+configure:
+	cd $(SOURCE_DIR); PKG_CONFIG_PATH=$(PKG_CONFIG_PATH) ./configure --host=$(HOST) --prefix=$(DEST_DIR)
+
+build:
+	cd $(SOURCE_DIR); make
+
+install:
+	cd $(SOURCE_DIR); make install
+
+clean:
+	cd $(SOURCE_DIR); make clean
+
