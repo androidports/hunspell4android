@@ -13,7 +13,7 @@ abreviated	abbreviated
 abreviation	abbreviation
 abritrary	arbitrary
 absense	absence
-absolutly	absolutely
+absolutely	absolutely
 absorbsion	absorption
 absorbtion	absorption
 abundacies	abundances
